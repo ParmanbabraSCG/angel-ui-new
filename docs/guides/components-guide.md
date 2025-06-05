@@ -153,6 +153,19 @@ This document provides an overview of the reusable UI components available in th
     - `className` (string, optional): Custom CSS classes.
 - **Notes**: Calls `event.preventDefault()` on submit.
 
+### `FormControl.tsx`
+- **Purpose**: A generic wrapper component for form elements, providing consistent styling for labels, input fields, hint text, and error/success messages.
+- **Props**:
+    - `label` (string, required): The main label text for the form control.
+    - `htmlFor` (string, optional): Associates the label with an input ID. This should match the `id` of the input element it wraps.
+    - `children` (ReactNode, required): The actual form input element (e.g., `InputField`, `Select`, `TextArea`, etc.) that this control wraps.
+    - `hint` (string, optional): Text displayed below the input, often used for additional instructions or examples.
+    - `error` (boolean, optional): If true, applies error styling to the hint text. Defaults to `false`.
+    - `required` (boolean, optional): If true, displays a visual indicator (an asterisk *) next to the label to mark the field as mandatory. Defaults to `false`.
+    - `success` (boolean, optional): If true, applies success styling to the hint text. Defaults to `false`.
+    - `className` (string, optional): Custom CSS classes for the container div of the form control.
+- **Notes**: Centralizes styling and logic for form field presentation, reducing repetition in form markup.
+
 ## UI Components (`src/components/ui`)
 
 ### `Avatar.tsx`
@@ -250,12 +263,16 @@ This document provides an overview of the reusable UI components available in th
 - **Props**:
     - `children` (ReactNode, required): Button text or content.
     - `size` ("sm" | "md", optional): Button size. Defaults to "md".
-    - `variant` ("primary" | "outline", optional): Button style variant. Defaults to "primary".
+    - `variant` ("primary" | "outline" | "success" | "danger", optional): Button style variant. Defaults to "primary".
     - `startIcon` (ReactNode, optional): Icon to display before the text.
     - `endIcon` (ReactNode, optional): Icon to display after the text.
     - `onClick` (function, optional): Click handler.
     - `disabled` (boolean, optional): If true, the button is disabled. Defaults to `false`.
     - `className` (string, optional): Additional custom CSS classes.
+    - `isLoading` (boolean, optional): If true, the button shows a loading spinner and is disabled. Defaults to `false`.
+    - `type` ("button" | "submit" | "reset", optional): The type of the button. Defaults to "button".
+    - `fullWidth` (boolean, optional): If true, the button takes up the full width of its parent container. Defaults to `false`.
+- **Notes**: Supports `forwardRef` to allow direct DOM access to the button element.
 
 ### `Badge.tsx`
 - **Purpose**: Displays a badge, typically for status indicators or labels.

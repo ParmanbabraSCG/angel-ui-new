@@ -15,7 +15,6 @@ const CountryMap: React.FC<CountryMapProps> = ({ mapColor }) => {
       markerStyle={{
         initial: {
           fill: "#465FFF",
-          r: 4, // Custom radius for markers
         },
       }}
       markersSelectable={true}
@@ -91,4 +90,4 @@ const CountryMap: React.FC<CountryMapProps> = ({ mapColor }) => {
   );
 };
 
-export default CountryMap; 
+export default CountryMap;

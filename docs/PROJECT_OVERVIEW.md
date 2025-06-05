@@ -90,17 +90,14 @@
 
 ## 6. แนวทางการให้ AI ทำความเข้าใจ/โต้ตอบกับโครงการ
 *   **API Endpoints:**
-    *   ดูเอกสาร API (เช่น Swagger/OpenAPI) ที่ `[link-to-api-docs]`
-    *   ตัวอย่าง Endpoints สำคัญ:
-        *   `POST /api/v1/inbound/receive`: สำหรับรับสินค้าเข้าคลัง
-        *   `GET /api/v1/inventory/items?product_id={id}`: สำหรับตรวจสอบจำนวนสินค้า
-        *   `POST /api/v1/outbound/pick_order`: สำหรับสร้างคำสั่งหยิบสินค้า
+    *   เอกสาร API (Swagger/OpenAPI) ดูได้ที่ `docs/api/swagger.json`
+    *   ตัวอย่าง Endpoints สำคัญ (อ้างอิงจากระบบจริง):
+        *   `POST /api/AccountGroup/getgroups`: ดึงข้อมูลกลุ่มบัญชี
+        *   `POST /api/AccountGroup/getusergroups`: ดึงกลุ่มบัญชีของผู้ใช้
 *   **โครงสร้างข้อมูล (Data Models/Schema):**
     *   ทำความเข้าใจ `entities` หรือ `models` ในโค้ดเพื่อดูโครงสร้างการจัดเก็บข้อมูลหลัก เช่น `Product`, `InventoryItem`, `PurchaseOrder`, `SalesOrder`, `Shipment`
 *   **ขั้นตอนการทำงานหลัก (Key Workflows):**
-    *   **Inbound Process:** Receiving -> Quality Check -> Putaway
-    *   **Outbound Process:** Order Received -> Allocation -> Picking -> Packing -> Shipping
-    *   **Inventory Adjustment:** Cycle Count / Stock Take -> Update Inventory Levels
+   [ยังไม่มีข้อมูล]
 
 ## 7. แผนภาพ (Diagrams)
 

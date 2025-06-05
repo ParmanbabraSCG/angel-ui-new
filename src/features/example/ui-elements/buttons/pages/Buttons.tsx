@@ -62,6 +62,28 @@ export default function Buttons() {
             </Button>
           </div>
         </ComponentCard>
+        {/* Success Button */}
+        <ComponentCard title="Success Button">
+          <div className="flex items-center gap-5">
+            <Button size="sm" variant="success">
+              Button Text
+            </Button>
+            <Button size="md" variant="success">
+              Button Text
+            </Button>
+          </div>
+        </ComponentCard>
+        {/* Danger Button */}
+        <ComponentCard title="Danger Button">
+          <div className="flex items-center gap-5">
+            <Button size="sm" variant="danger">
+              Button Text
+            </Button>
+            <Button size="md" variant="danger">
+              Button Text
+            </Button>
+          </div>
+        </ComponentCard>
         {/* Outline Button */}
         <ComponentCard title="Secondary Button">
           <div className="flex items-center gap-5">
@@ -72,6 +94,28 @@ export default function Buttons() {
             <Button size="md" variant="outline">
               Button Text
             </Button>
+          </div>
+        </ComponentCard>
+        {/* Full Width Button */}
+        <ComponentCard title="Full Width Button">
+          <div className="w-full max-w-sm">
+            <Button fullWidth>Full Width Button</Button>
+          </div>
+        </ComponentCard>
+        {/* Loading Button */}
+        <ComponentCard title="Loading Button">
+          <div className="flex items-center gap-5">
+            <Button isLoading>Loading Button</Button>
+            <Button isLoading variant="outline">Loading Outline</Button>
+            <Button isLoading variant="success">Saving...</Button>
+          </div>
+        </ComponentCard>
+        {/* Button Types */}
+        <ComponentCard title="Button Types">
+          <div className="flex items-center gap-5">
+            <Button type="button" onClick={() => alert('Button clicked!')}>Type: Button</Button>
+            <Button type="submit">Type: Submit</Button>
+            <Button type="reset">Type: Reset</Button>
           </div>
         </ComponentCard>
         {/* Outline Button with Start Icon */}
@@ -92,7 +136,7 @@ export default function Buttons() {
               Button Text
             </Button>
           </div>
-        </ComponentCard>{" "}
+        </ComponentCard>
         {/* Outline Button with Start Icon */}
         <ComponentCard title="Outline Button with Right Icon">
           <div className="flex items-center gap-5">

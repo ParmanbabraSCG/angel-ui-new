@@ -18,7 +18,6 @@ import NotFound from "./features/not-found/pages/NotFound";
 import AppLayout from "./components/layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./features/example/dashboard/pages/Home";
-import HomePage from "./features/home/components/HomePage";
 
 export default function App() {
   return (
@@ -29,7 +28,6 @@ export default function App() {
           {/* Dashboard Layout */}
           <Route element={<AppLayout />}>
             <Route index path="/" element={<Home />} />
-            <Route path="/home" element={<HomePage />} />
 
             {/* Others Page */}
             {/* <Route path="/profile" element={<UserProfiles />} /> */}

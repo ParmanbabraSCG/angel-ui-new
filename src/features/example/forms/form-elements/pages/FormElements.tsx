@@ -9,6 +9,7 @@ import FileInputExample from "../components/FileInputExample";
 import SelectInputs from "../components/SelectInputs";
 import TextAreaInput from "../components/TextAreaInput";
 import InputStates from "../components/InputStates";
+import FormControlExample from "../components/FormControlExample";
 import PageMeta from "../../../../../components/common/PageMeta";
 
 export default function FormElements() {
@@ -33,6 +34,7 @@ export default function FormElements() {
           <RadioButtons />
           <ToggleSwitch />
           <DropzoneComponent />
+          <FormControlExample />
         </div>
       </div>
     </div>
