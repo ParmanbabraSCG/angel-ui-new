@@ -96,6 +96,45 @@ To ensure new UI components are easily discoverable and understood, always follo
 *   **Update `components-guide.md`**: After creating a new UI component, add a detailed entry for it in `docs/guides/components-guide.md`. This entry should include its purpose, props, and any relevant notes.
 *   **Create an Example Component**: For every new UI component, create a corresponding example implementation within the `src/features/example/forms/form-elements/components/` (for form components) or `src/features/example/ui-elements/` (for general UI components) directory. This example should demonstrate the component's usage with various props and states, and then be integrated into the respective example page (e.g., `src/features/example/forms/form-elements/pages/FormElements.tsx`).
 
+### Overview of Example Implementations
+
+To help you find relevant examples, here is a brief overview of what is demonstrated in the `src/features/example/` directory:
+
+*   **`src/features/example/calendar/`**:
+    *   Demonstrates a full-featured calendar using `@fullcalendar/react`.
+    *   Includes event creation, editing, and display.
+    *   Located in `src/features/example/calendar/pages/Calendar.tsx`.
+*   **`src/features/example/charts/`**:
+    *   Contains examples of different chart types (Bar, Line) using `react-apexcharts`.
+    *   Bar charts are in `src/features/example/charts/bar-chart/`.
+    *   Line charts are in `src/features/example/charts/line-chart/`.
+*   **`src/features/example/dashboard/`**:
+    *   Showcases a sample dashboard layout.
+    *   Includes various metric cards, charts (`MonthlySalesChart`, `StatisticsChart`, `MonthlyTarget`), a `CountryMap` (using `@react-jvectormap`), and a `RecentOrders` table.
+    *   The main page is `src/features/example/dashboard/pages/Home.tsx`.
+*   **`src/features/example/forms/`**:
+    *   **`form-elements/`**: This is the primary location for demonstrating individual form components.
+        *   Includes examples for `InputField`, `Select`, `TextArea`, `Checkbox`, `Radio`, `Switch`, `FileInput`, `DropzoneComponent`, and the `FormControl` wrapper.
+        *   Components are in `src/features/example/forms/form-elements/components/` and aggregated in `src/features/example/forms/form-elements/pages/FormElements.tsx`.
+*   **`src/features/example/tables/`**:
+    *   Provides examples of table implementations.
+    *   `basic-tables/` demonstrates a basic table with sorting and pagination.
+    *   Located in `src/features/example/tables/basic-tables/pages/BasicTables.tsx`.
+*   **`src/features/example/ui-elements/`**:
+    *   This directory showcases various general UI components.
+    *   **`alerts/`**: Examples of `Alert` components with different variants. (`src/features/example/ui-elements/alerts/pages/Alerts.tsx`)
+    *   **`avatars/`**: Examples of `Avatar` components with different sizes and statuses. (`src/features/example/ui-elements/avatars/pages/Avatars.tsx`)
+    *   **`badges/`**: Examples of `Badge` components with different variants and icons. (`src/features/example/ui-elements/badges/pages/Badges.tsx`)
+    *   **`buttons/`**: Examples of `Button` components with different sizes, variants, and states. (`src/features/example/ui-elements/buttons/pages/Buttons.tsx`)
+    *   **`images/`**: Examples of responsive images and image grids. (`src/features/example/ui-elements/images/pages/Images.tsx`)
+    *   **`videos/`**: Examples of embedded videos with different aspect ratios. (`src/features/example/ui-elements/videos/pages/Videos.tsx`)
+*   **`src/features/example/userProfile/`**:
+    *   Demonstrates a user profile page with editable sections for personal information and address.
+    *   Includes `UserInfoCard`, `UserAddressCard`, and `UserMetaCard`.
+    *   The main page is `src/features/example/userProfile/pages/UserProfiles.tsx`.
+
+This overview should make it easier to find an appropriate example when developing new UI components. Remember to update or add to these examples as new patterns or components are introduced.
+
 ---
 *This guide should be updated as the project evolves and new conventions are established.*
 
