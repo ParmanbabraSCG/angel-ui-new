@@ -15,7 +15,7 @@ import Calendar from "./features/example/calendar/pages/Calendar";
 import BasicTables from "./features/example/tables/basic-tables/pages/BasicTables";
 import FormElements from "./features/example/forms/form-elements/pages/FormElements";
 import Blank from "./features/blank/pages/Blank";
-import AppLayout from "./layout/AppLayout";
+import AppLayout from "./components/layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./features/example/dashboard/pages/Home";
 
