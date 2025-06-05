@@ -1,0 +1,17 @@
+# Ignore artifacts:
+build
+dist
+coverage
+node_modules
+
+# Ignore vendor-specific:
+.vscode
+.DS_Store
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore logs
+*.log 
