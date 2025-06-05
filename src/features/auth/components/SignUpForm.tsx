@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { ChevronLeftIcon, EyeCloseIcon, EyeIcon } from "../../../icons";
 import Label from "../../../components/form/Label";
-import Input from "../../../components/form/input/InputField";
-import Checkbox from "../../../components/form/input/Checkbox";
+import Input from "../../../components/form/InputField";
+import Checkbox from "../../../components/form/Checkbox";
 
 export default function SignUpForm() {
   const [showPassword, setShowPassword] = useState(false);

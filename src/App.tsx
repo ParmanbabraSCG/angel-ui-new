@@ -2,22 +2,22 @@ import { BrowserRouter as Router, Routes, Route } from "react-router";
 import SignIn from "./features/auth/pages/SignIn";
 import SignUp from "./features/auth/pages/SignUp";
 import NotFound from "./features/not-found/pages/NotFound";
-import UserProfiles from "./features/userProfile/pages/UserProfiles";
-import Videos from "./features/ui-elements/videos/pages/Videos";
-import Images from "./features/ui-elements/images/pages/Images";
-import Alerts from "./features/ui-elements/alerts/pages/Alerts";
-import Badges from "./features/ui-elements/badges/pages/Badges";
-import Avatars from "./features/ui-elements/avatars/pages/Avatars";
-import Buttons from "./features/ui-elements/buttons/pages/Buttons";
-import LineChart from "./features/charts/line-chart/pages/LineChart";
-import BarChart from "./features/charts/bar-chart/pages/BarChart";
-import Calendar from "./features/calendar/pages/Calendar";
-import BasicTables from "./features/tables/basic-tables/pages/BasicTables";
-import FormElements from "./features/forms/form-elements/pages/FormElements";
+import UserProfiles from "./features/example/userProfile/pages/UserProfiles";
+import Videos from "./features/example/ui-elements/videos/pages/Videos";
+import Images from "./features/example/ui-elements/images/pages/Images";
+import Alerts from "./features/example/ui-elements/alerts/pages/Alerts";
+import Badges from "./features/example/ui-elements/badges/pages/Badges";
+import Avatars from "./features/example/ui-elements/avatars/pages/Avatars";
+import Buttons from "./features/example/ui-elements/buttons/pages/Buttons";
+import LineChart from "./features/example/charts/line-chart/pages/LineChart";
+import BarChart from "./features/example/charts/bar-chart/pages/BarChart";
+import Calendar from "./features/example/calendar/pages/Calendar";
+import BasicTables from "./features/example/tables/basic-tables/pages/BasicTables";
+import FormElements from "./features/example/forms/form-elements/pages/FormElements";
 import Blank from "./features/blank/pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
-import Home from "./features/dashboard/pages/Home";
+import Home from "./features/example/dashboard/pages/Home";
 
 export default function App() {
   return (

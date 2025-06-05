@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { ChevronLeftIcon, EyeCloseIcon, EyeIcon } from "../../../icons";
 import Label from "../../../components/form/Label";
-import Input from "../../../components/form/input/InputField";
-import Checkbox from "../../../components/form/input/Checkbox";
-import Button from "../../../components/ui/button/Button";
+import Input from "../../../components/form/InputField";
+import Checkbox from "../../../components/form/Checkbox";
+import Button from "../../../components/ui/Button";
 
 export default function SignInForm() {
   const [showPassword, setShowPassword] = useState(false);
