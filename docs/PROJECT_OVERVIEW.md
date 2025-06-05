@@ -49,29 +49,34 @@
                 *   `services/`: บริการเฉพาะของฟีเจอร์
                 *   `types/`: type definitions
                 *   `utils/`: utility functions
+                *   `store/`: Zustand store สำหรับฟีเจอร์นี้
             *   `inventory/`: ระบบจัดการสินค้าคงคลัง
                 *   `components/`
                 *   `hooks/`
                 *   `services/`
                 *   `types/`
                 *   `utils/`
+                *   `store/`: Zustand store สำหรับฟีเจอร์นี้
             *   `orders/`: ระบบจัดการคำสั่งซื้อ
                 *   `components/`
                 *   `hooks/`
                 *   `services/`
                 *   `types/`
                 *   `utils/`
+                *   `store/`: Zustand store สำหรับฟีเจอร์นี้
             *   `reports/`: ระบบรายงาน
                 *   `components/`
                 *   `hooks/`
                 *   `services/`
                 *   `types/`
                 *   `utils/`
+                *   `store/`: Zustand store สำหรับฟีเจอร์นี้
         *   `components/`: คอมโพเนนต์ที่ใช้ร่วมกัน
         *   `hooks/`: custom hooks ที่ใช้ร่วมกัน
         *   `services/`: บริการที่ใช้ร่วมกัน
         *   `types/`: type definitions ที่ใช้ร่วมกัน
         *   `utils/`: utility functions ที่ใช้ร่วมกัน
+        *   `store/`: Zustand store ที่ใช้ร่วมกัน
         *   `config/`: ไฟล์ตั้งค่าต่างๆ
         *   `styles/`: ไฟล์ CSS และ styling
     *   `tests/`: โค้ดสำหรับทดสอบระบบ
